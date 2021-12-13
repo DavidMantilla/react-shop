@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/header.scss';
+import '../styles/categories.scss';
 
 const Categories = () => {
 
