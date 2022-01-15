@@ -7,6 +7,8 @@ import '../styles/global.css';
 import Home from "../Pages/Home";
 import NoEncontrado from "../Pages/NotFound";
 import Myaccount from "../Pages/Myaccount";
+import { Orders } from "../Pages/Orders";
+import { MyOrder } from "../Pages/MyOrder";
 
 const App = () => {
 
@@ -18,6 +20,9 @@ const App = () => {
                     <Route path="/login" element={<Login />} />		
                     <Route path="/recovery" element={<Recovery />} />
                     <Route path="/myaccount" element={<Myaccount />} />
+                    <Route path="/orders" element={<Orders />} />
+                    <Route path="/myorders" element={<MyOrder />} />
+
                     <Route path="*" element={<NoEncontrado />} />
                 </Routes>
             </Layout>

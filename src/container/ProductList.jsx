@@ -1,12 +1,32 @@
 
 import React from "react";
+import { ProductItem } from "../components/ProductItem";
+import '../styles/product.scss';
 
-
-const ProductList= () => {
+const ProductList = () => {
 
     return (
-<div></div>
+    <section className="main-container">
+        <div className="cards-container">
+        
+                
+              <ProductItem ></ProductItem>
+              <ProductItem ></ProductItem>
+              <ProductItem ></ProductItem>
+              <ProductItem ></ProductItem>
+              <ProductItem ></ProductItem>
+              <ProductItem ></ProductItem>
+              <ProductItem ></ProductItem>
+              <ProductItem ></ProductItem>
+              <ProductItem ></ProductItem>
+              <ProductItem ></ProductItem>
+         
+        </div>
+    </section>
 
 
 
     )};
+
+
+    export {ProductList};  
