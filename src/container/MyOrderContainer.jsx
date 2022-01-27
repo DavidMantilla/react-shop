@@ -1,7 +1,7 @@
 import React from "react";
 import { MyOrderProds} from "../components/MyOrderProds";
-import '../styles/MyOrder.scss';
-import { Order } from "../components/Order";
+import '@styles/MyOrder.scss';
+import { Order } from "@components/Order";
 const MyOrderContainer = () => {
 
     return (

@@ -1,3 +1,13 @@
+.shopping-cart-container {
+  width: 360px;
+  height: 100vh;
+  padding-bottom: 24px;
+  position: absolute;
+  right: 0;
+  top: 65px;
+  background: var(--white);
+}
+
 .title-container {
     display: flex;
   }

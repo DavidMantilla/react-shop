@@ -1,21 +1,28 @@
 
-import React from "react";
+import React , {useContext, useState}from "react";
 import '../styles/menu.scss';
-
-const ProductItem= () => {
+import addCart from "@icons/bt_add_to_cart.svg";
+import AppContext from "../context/AppContext";
+const ProductItem= ({producto}) => {
+const {addToCart} = useContext(AppContext);
+const handle = (item) => {
+  addToCart(item);
+}
 
     return (
         
   <div className="product-card">
-<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt />
+
+<img src={producto.images[0]} alt={producto.title}/>
 <div className="product-item">
   <div>
-    <p>$120,00</p>
-    <p>Bike</p>
+    <p>${producto.price}</p>
+    <p>{producto.title}</p>
   </div>
-  <figure>
-    <img src="./icons/bt_add_to_cart.svg" alt />
+  <figure onClick={()=>{handle(producto)}}>
+    <img src={addCart} alt="" />
   </figure>
+
 </div>
 </div>
     )};
